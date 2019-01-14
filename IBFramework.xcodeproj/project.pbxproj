@@ -8,12 +8,16 @@
 
 /* Begin PBXBuildFile section */
 		BD12EB0821ECB22200C610FA /* IBFramework.h in Headers */ = {isa = PBXBuildFile; fileRef = BD12EB0621ECB22200C610FA /* IBFramework.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BD12EB1021ECB25000C610FA /* IBDLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD12EB0E21ECB24A00C610FA /* IBDLabel.swift */; };
+		BD12EB1121ECB25000C610FA /* IBDTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD12EB0F21ECB24A00C610FA /* IBDTextView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		BD12EB0321ECB22100C610FA /* IBFramework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = IBFramework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BD12EB0621ECB22200C610FA /* IBFramework.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IBFramework.h; sourceTree = "<group>"; };
 		BD12EB0721ECB22200C610FA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BD12EB0E21ECB24A00C610FA /* IBDLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IBDLabel.swift; sourceTree = "<group>"; };
+		BD12EB0F21ECB24A00C610FA /* IBDTextView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IBDTextView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +51,8 @@
 			isa = PBXGroup;
 			children = (
 				BD12EB0621ECB22200C610FA /* IBFramework.h */,
+				BD12EB0E21ECB24A00C610FA /* IBDLabel.swift */,
+				BD12EB0F21ECB24A00C610FA /* IBDTextView.swift */,
 				BD12EB0721ECB22200C610FA /* Info.plist */,
 			);
 			path = IBFramework;
@@ -95,6 +101,7 @@
 				TargetAttributes = {
 					BD12EB0221ECB22100C610FA = {
 						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1010;
 					};
 				};
 			};
@@ -130,6 +137,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BD12EB1021ECB25000C610FA /* IBDLabel.swift in Sources */,
+				BD12EB1121ECB25000C610FA /* IBDTextView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -261,6 +270,7 @@
 		BD12EB0C21ECB22200C610FA /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -277,6 +287,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.cts.IBFramework;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -285,6 +296,7 @@
 		BD12EB0D21ECB22200C610FA /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
